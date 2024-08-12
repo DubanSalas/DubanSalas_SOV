@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Valle Grande</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    Hola mundo
+    <header>
+        <nav class="barnav">
+            <img src="img/logoValleGrande.png" alt="Logo de Valle Grande">
+            <div class="nav-links">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#historia">Historia</a>
+                <a href="#video">Video</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Bienvenido a Valle Grande</h1>
+        <img src="img/instVG.png" alt="Imagen de Valle Grande">
+    </section>
+
+    <section id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>Valle Grande es actualmente un Centro de Educación Superior constituido por la Promotora de Obras Socialesy de Instrucción Popular (PROSIP) el 25 de febrero de 1965, reconocido por el Ministerio de Agricultura mediante Resolución Directoral N° 04383-AG-DGAG del 2 de junio de 1983 y por el Ministerio de Educación mediante Resolución Ministerial N°0751-92-ED.</p>
+    </section>
+
+    <section id="historia">
+        <h2>Desarrollo histórico</h2>
+        <p>Han transcurrido casi 50 años de trabajo y continuamos con el mismo deseo: seguir contribuyendo con el bienestar de las familias de Cañete y Yauyos.</p>
+        <a href="#historia">Leer más</a>
+    </section>
 </body>
 </html>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.barnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px;
+    background-color: #005185; 
+}
+
+.barnav img {
+    height: 50px;
+    margin-left: 30px;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 40px;
+    gap: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #F4B340;
+    border-radius: 40px;
+    border: 2.5px solid black;
+}
+
+.nav-links a:hover {
+    background-color: #bd7802;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto; 
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+section p {
+    text-align: justify;
+}
+
+section a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
